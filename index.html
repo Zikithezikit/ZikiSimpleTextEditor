@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ziki's Simple Text Editor</title>
+  </head>
+  <body>
+    <input
+      id="myFile"
+      type="file"
+      accept=".txt"
+      placeholder="Upload file here to edit it "
+      onchange="loadFileFromLocal()"
+    />
+    <label id="forUpload" for="files">Upload file here to edit it </label>
+
+    <div class="EditorPlusButtons">
+      <div class="ButtonsDiv">
+        <button onclick="DownloadFileText()">
+          <img
+            src="https://www.iconsdb.com/icons/preview/white/arrow-199-xxl.png"
+            alt="Download"
+          />
+        </button>
+        <button onclick="eraseText()">
+          <img
+            src="https://www.iconsdb.com/icons/preview/white/x-mark-2-xxl.png"
+            alt="Clear"
+          />
+        </button>
+      </div>
+
+      <div class="TextAreaBoxDiv">
+        <textarea
+          id="textareaID"
+          rows="4"
+          class="TextAreaBox"
+          placeholder="Write your thoughts here..."
+        ></textarea>
+      </div>
+    </div>
+
+    <link rel="stylesheet" href="./mainStyle.css" />
+    <script src="./mainScript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Chivo", sans-serif;
+}
+
+body{
+    margin:0;
+    padding:0;
+    
+}
+
+.TextAreaBoxDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.TextAreaBox{
+    font-size: 20px;
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: gray;
+    background-color: #1F2937;
+    width: 800px;
+    height: 700px;
+    outline: none;
+    color:white;
+    padding: 20px;
+    resize: none;
+    overflow: hidden;
+}
+.TextAreaBox:focus{
+    /*border-color: rgb(21, 74, 87);*/
+}
+.TextAreaBox::placeholder{
+    color:#a9afb8;
+}
+img{
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+button{
+    border:none;
+    background: none;
+    margin-left: 15px;
+}
+
+.EditorPlusButtons{
+    display: flex;
+    justify-content: center;
+}
+.ButtonsDiv{
+    width: 840px;
+    position: absolute;
+    border: solid 2px;
+    border-color: gray;
+    margin-top: 100px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    background-color: #374151;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#myFile{
+    color: #5a5a5a;
+    height: min-content;
+    width: min-content;
+    position: absolute;
+    top: 800px;
+    right:40px;
+}
+
+#forUpload{
+    position: absolute;
+    top: 760px;
+    right:120px;
+}
+
+
+input[type="file"]::file-selector-button {
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: 16px;
+    transition: background-color 200ms;
+  }
+  
+  /* file upload button hover state */
+  input[type="file"]::file-selector-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* file upload button active state */
+  input[type="file"]::file-selector-button:active {
+    background-color: #e5e7eb;
+  }
